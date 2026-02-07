@@ -365,7 +365,7 @@ html {
   border-radius: var(--border-radius);
   padding: 10px;
   max-width: 250px;
-  height: 250px;
+  height: 300px;
   align-content: center;
 }
 
