@@ -3,130 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,500&family=Karantina:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Carson K. | Front-End Web Design & Development</title>
     <meta name="description" content="Carson K. - Web design & front-end development for small businesses. Specializing in one-page websites, landing pages, and small website fixes.">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header class="site-header">
-        
-            <div class="logo">C.K.</div>
-            <div class="mobile-nav">
-                <button class="menu-btn" aria-label="Open menu">
-                    <span class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
-                </button>
-                <nav class="pri-nav">
-                    <ul class="nav-cards">
+    <header class="site-header">      
+        <a href="#home" class="logo">C.K.</a>
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+        </button>
+    </header>              
+    <main>
+        <div class="hero" id="home">
+            <div>
+                <div class="hero-content">
+                    <p>• Simple • Mobile-first • Practical</p>
+                    <h1>Hello👋🏾 , I am Carson. I Design & Build Clean, Responsive Websites for Small Businesses</h1>
+                    <p>One-page websites, landing pages, and small website fixes. Designed in Figma and built with clean code.</p>
+                </div>
+                <div class="hero-contact">
+                    <a href="mailto:carson.kipkalya.22@gmail.com?subject=Portfolio%20Inquiry" class="pri-button">
+                        GET IN TOUCH
+                    </a>                  
+                    <ul class="social-links">
                         <li>
-                            <a href="#services" class="nav-card">
-                            <img src="./assets/icons/service-icon.png" alt="Work icon by Icons8" class="nav-icon"/>
-                            <span class="label"> My Services</span></a>
+                        <a href="https://www.instagram.com/carson.k_/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/instagram-icon.svg" alt="Instagram" class="social-icon"/>
+                        </a>
                         </li>
                         <li>
-                            <a href="#projects" class="nav-card">
-                            <img src="./assets/icons/portfolio-icon.png" alt="Gallery icon by Icons8" class="nav-icon"/>
-                            <span class="label"> My Projects</span></a>
+                        <a href="https://github.com/carson-rk" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/github-icon.svg" alt="GitHub" class="social-icon"/>
+                        </a>
                         </li>
                         <li>
-                            <a href="#about" class="nav-card">
-                            <img src="./assets/icons/about-icon.png" alt="Info icon by Icons8" class="nav-icon"/><span class="label"> About Me</span></a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-card">
-                            <img src="./assets/icons/contact-icon.png" alt="Contact icon by Icons8" class="nav-icon"/><span class="label"> Contact Me</span></a>
+                        <a href="https://bit.ly/carson_r_k_" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/x-icon.svg" alt="X (Twitter)" class="social-icon"/>
+                        </a>
                         </li>
                     </ul>
-                </nav>
+                </div>                  
             </div>
-        
-              
-    </header>
-    <main>
-        <div>
-            <p>• Simple • Mobile-first • Practical</p>
-            <h1>Hello👋🏾 , I am Carson. I Design & Build Clean, Responsive Websites for Small Businesses</h1>
-            <p>One-page websites, landing pages, and small website fixes. Designed in Figma and built with clean code.</p>
-            <button>Get In Touch</button>
-            <ul>
-                <li>Email</li>
-                <li>Instagram</li>
-                <li>GitHub</li>
-                <li>X (Twitter)</li>
-            </ul>
-            
+            <nav class="pri-nav" id="primary-navigation" aria-label="Primary navigation">
+                <ul class="nav-cards">
+                    <li>
+                        <a href="#services" class="nav-card strong-glow">
+                        <img src="./assets/icons/services-icon.svg" alt="" class="nav-icon" aria-hidden="true"/>
+                        <span class="label"> My Services</span></a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav-card strong-glow">
+                        <img src="./assets/icons/portfolio-icon.svg" alt="" class="nav-icon" aria-hidden="true"/>
+                        <span class="label"> My Projects</span></a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-card strong-glow">
+                        <img src="./assets/icons/about-icon.svg" alt="" class="nav-icon" aria-hidden="true"/><span class="label"> About Me</span></a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-card strong-glow">
+                        <img src="./assets/icons/contact-icon.svg" alt="" class="nav-icon" aria-hidden="true"/><span class="label"> Contact Me</span></a>
+                    </li>
+                </ul>
+            </nav>                             
+        </div>        
+        <div class="services" id="services">
+            <h2 class="text-center">WHAT I DO</h2>
+            <div class="service-cards">
+                <div class="service-card strong-glow">
+                    <h3 class="card-title">One-Page Websites</h3>
+                    <p class="card-info">Clean, professional websites that clearly present a business and encourage inquiries.</p>
+                </div>
+                <div class="service-card strong-glow">
+                    <h3 class="card-title">Landing Pages</h3>
+                    <p class="card-info">Focused pages built around a single offer with a clear call-to-action.</p>
+                </div>
+                <div class="service-card strong-glow">
+                    <h3 class="card-title">Website Fixes</h3>
+                    <p class="card-info">Small updates such as layout fixes, mobile issues, text edits, and styling improvements.</p>
+                </div>    
+            </div>
         </div>
-        
-        <div class="services">
-            <h2>WHAT I DO</h2>
-            <h3>One-Page Websites</h3>
-            <p>Clean, professional websites that clearly present a business and encourage inquiries.</p>
-            <h3>Landing Pages</h3>
-            <p>Focused pages built around a single offer with a clear call-to-action.</p>
-            <h3>Website Fixes & Edits</h3>
-            <p>Small updates such as layout fixes, mobile issues, text edits, and styling improvements.</p>
-        </div>
-        <div class="portfolio">
+        <div class="portfolio" id="projects">
             <h2>FEATURED PROJECTS</h2>
-            <h3>BrightNest</h3>
-            <p>A one-page website designed and built for a local cleaning service to improve clarity, trust, and mobile usability.</p>
-            <ul>
-                <li>One-page layout</li>
-                <li>Mobile-first design</li>
-                <li>Clear service sections and CTAs</li>
-                <li>Figma → HTML/CSS/JS</li>
-            </ul>
-            <button>Live Demo</button>
-            <h3>Personal Fitness Trainer</h3>
-            <p>A focused landing page created to promote personal training services and drive sign-ups through a clear value proposition.</p>
-            <ul>
-                <li>Conversion-focused layout</li>
-                <li>Responsive design</li>
-                <li>Clean typography and spacing</li>
-            </ul>
-            <button>Live Demo</button>
-            <h3>Small Medical Clinic</h3>
-            <p>A homepage redesign concept aimed at improving readability, visual hierarchy, and user experience on mobile devices.</p>
-            <ul>
-                <li>Visual redesign in Figma</li>
-                <li>Simplified structure</li>
-                <li>Improved spacing and hierarchy</li>
-            </ul>
-            <button>Live Demo</button>
+            <div class="project-cards ">
+                <div class="project-card subtle-glow">
+                    <div class="project-img">
+                        <img src="./assets/icons/unfinished-project.svg" alt="" />
+                    </div>
+                    <div class="card-title">
+                        <h3>BrightNest</h3>
+                    </div>
+                    <div class="project-stack">
+                        <ul>
+                            <li>One-page layout</li>
+                            <li>Mobile-first design</li>
+                            <li>Clear service sections and CTAs</li>
+                            <li>Figma → HTML/CSS/JS</li>
+                        </ul>
+                    </div>
+                    <div class="project-info">
+                        <p>A one-page website designed and built for a local cleaning service to improve clarity, trust, and mobile usability.</p>
+                    </div> 
+                    <button class="broken-button">LIVE DEMO</button>
+                </div>
+                <div class="project-card subtle-glow">
+                    <div class="project-img">
+                        <img src="./assets/icons/unfinished-project.svg" alt=""/>
+                    </div>
+                    <div class="card-title">
+                        <h3>AlignWell</h3>
+                    </div>
+                    <div class="project-stack">
+                        <ul>
+                            <li>Conversion-focused layout</li>
+                            <li>Responsive design</li>
+                            <li>Clean typography and spacing</li>
+                        </ul>
+                    </div>
+                    <div class="project-info">
+                        <p>A focused landing page created to promote personal training services and drive sign-ups through a clear value proposition.</p>
+                    </div>
+                    <button class="broken-button">LIVE DEMO</button>
+                </div>
+                <div class="project-card subtle-glow">
+                    <div class="project-img">
+                        <img src="./assets/icons/unfinished-project.svg" alt=""/>
+                    </div>
+                    <div class="card-title">
+                        <h3>Tuunza</h3>
+                    </div>
+                    <div class="project-stack">
+                        <ul>
+                            <li>Visual redesign in Figma</li>
+                            <li>Simplified structure</li>
+                            <li>Improved spacing and hierarchy</li>
+                        </ul>
+                    </div>
+                    <div class="project-info">
+                        <p>A visual redesign of an existing website to create a more modern, clean look while maintaining the original structure and content.</p>
+                    </div> 
+                    <button class="broken-button">LIVE DEMO</button>  
+                </div>
+            </div>
         </div>
-        <div class="about-me">
-            <h2>ABOUT ME</h2>
-            <p>I'm a web designer and front-end developer focused on building simple, functional websites for small businesses. I work best on one-page sites, landing pages, and small improvements where clarity matters.</p>
-            <h3>How I Work</h3>
-            <ol>
-                <li>Consultation: Discuss your needs and goals.</li>
-                <li>Design: Create a Figma mockup for your approval (if needed).</li>
-                <li>Development: Build the website with clean, responsive code.</li>
-                <li>Review: Make any necessary revisions.</li>
-                <li>Launch: Deploy your new website.</li>
-            </ol>
-            <h3>Stack</h3>
-            <ul>
-                <li>Figma</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-            </ul>
+        <div class="about-me" id="about">
+            <div class="about-content">
+                <div>
+                    <h2>ABOUT ME</h2>
+                </div>
+                <div>
+                    <p>I'm a web designer and front-end developer focused on building simple, functional websites for small businesses. I work best on one-page sites, landing pages, and small improvements where clarity matters.</p>
+                
+                    <ul class="skill-icons">
+                        <li>
+                            <img src="./assets/icons/figma-icon.svg" alt="Figma icon" class="skill-icon"/>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/html-icon.svg" alt="HTML icon" class="skill-icon"/>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/css-icon.svg" alt="CSS icon" class="skill-icon"/>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/js-icon.svg" alt="JavaScript icon" class="skill-icon"/>
+                        </li>
+                        <li>
+                            <img src="./assets/icons/git-icon.svg" alt="Git icon" class="skill-icon"/>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class=process-content>
+                <div>
+                    <h3>How I Work</h3>
+                </div>
+                <div class="process-cards">
+                    <ol>
+                        <li class="process-card strong-glow">
+                            <img src="./assets/icons/consultation-icon.svg" alt="Consultation icon" class="process-icon"/>
+                            <h4 class="card-title">01. Consultation:</h4>
+                            <p>Discuss and understand your needs and goals.</p>
+                        </li>
+                        <li class="process-card strong-glow">
+                            <img src="./assets/icons/design-icon.svg" alt="Design icon" class="process-icon"/>
+                            <h4 class="card-title">02. Design:</h4>
+                            <p>Create a Figma mockup for your approval (if needed).</p>
+                        </li>
+                        <li class="process-card strong-glow">
+                            <img src="./assets/icons/development-icon.svg" alt="Development icon" class="process-icon"/>
+                            <h4 class="card-title">03. Development:</h4>
+                            <p>Build the website with clean, responsive code.</p>
+                        </li>
+                        <li class="process-card strong-glow">
+                            <img src="./assets/icons/launch-icon.svg" alt="Launch icon" class="process-icon"/>
+                            <h4 class="card-title">04. Launch:</h4>
+                            <p>Make any necessary revisions, then deploy your new site.</p>
+                        </li>                
+                    </ol>
+                </div>
+            </div>            
         </div>
-        <div class="contact-me">
-            <h2>LET'S WORK TOGETHER</h2>
-            <p>Have a project in mind or need help improving your website? Feel free to reach out.</p>
-            <button>Contact Me</button>
+        <div class="contact-me" id="contact">
+            <h2 class="text-center">LET'S WORK TOGETHER</h2>
+            <div class="contact-info">
+                <div class="contact-text">
+                    <p>Have a project in mind or need help improving your website? Feel free to reach out.</p>
+                </div>
+                <div class="icon-btns">
+                    <a href="mailto:carson.kipkalya.22@gmail.com?subject=Portfolio%20Inquiry" class="icon-btn">
+                    <img src="./assets/icons/email-icon.svg" alt="" class="btn-icon" aria-hidden="true"/>
+                        <span>SEND EMAIL</span>
+                    </a> 
+                    <a href="https://wa.me/254747968672?text=Hi%20Carson,%20I%20found%20your%20portfolio" class="icon-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./assets/icons/whatsapp-icon.svg" alt="" class="btn-icon" aria-hidden="true"/>
+                        <span>WHATSAPP</span>
+                    </a> 
+                </div>
+                <div class="contact-social">
+                    <ul class="social-links">
+                        <li>
+                        <a href="https://www.instagram.com/carson.k_/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/instagram-icon.svg" alt="Instagram" class="social-icon"/>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://github.com/carson-rk" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/github-icon.svg" alt="GitHub" class="social-icon"/>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://bit.ly/carson_r_k_" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/icons/x-icon.svg" alt="X (Twitter)" class="social-icon"/>
+                        </a>
+                        </li>
+                    </ul>                 
+                </div>
+            </div>  
         </div>
     </main>
-    <footer>
-        <p>© 2026 Carson K. Web design & front-end development for small businesses.</p>
+    <footer class="footer">
+        <p>© 2026 Carson K. All rights reserved.</p>
+        <p>Web design & front-end development for small businesses.</p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
    
